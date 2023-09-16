@@ -1,0 +1,115 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #181818;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: -1px 5px 20px black;
+}
+
+header h1{
+  text-shadow: 2px 2px 2px black;
+  font-weight: bold;
+  
+}
+
+main {
+  padding: 20px;
+  max-width: 480px; /* Define uma largura máxima para simular um layout responsivo */
+  margin: 0 auto; /* Centraliza o conteúdo na tela */
+}
+
+/* Formulário e Lista de Compras */
+#formulario-compras {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#item-input {
+  flex-grow: 0.4;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-inline: 5px;
+}
+
+#limpar-lista {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+::placeholder{
+  font-weight: bold;
+}
+
+li {
+  display: flex;
+  justify-content: space-between; /* Alinha elementos à esquerda e à direita */
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#lista-compras{
+  align-items: center;
+  justify-content: center;
+  display: table;
+  height: 100vh;
+  margin: 0 auto  ;
+  width: 58.5%;
+}
+
+li button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Responsividade */
+@media (min-width: 481px) {
+  /* Quando a largura da tela for maior do que 480px (largura de dispositivos móveis), aplique o seguinte estilo: */
+  main {
+      max-width: none; /* Remove a largura máxima */
+  }
+}

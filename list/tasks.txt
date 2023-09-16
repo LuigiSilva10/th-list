@@ -1,0 +1,3 @@
+1 - terminar o link das 5 primeiras partes (Finished)
+2 - Delimitar a rolagem vertical da página para estática
+2 - Decidir como vai ser as perguntas e respostas (tempo, cores, display etc.)
